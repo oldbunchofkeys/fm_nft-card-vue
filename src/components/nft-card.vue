@@ -2,7 +2,7 @@
   <div class="card-wrapper">
     <div class="card">
       <div class="nft-img-wrapper">
-        <img width="279" class="nft-image" src="../assets/images/image-equilibrium.jpg" alt="image of the nft">
+        <img class="nft-image" src="../assets/images/image-equilibrium.jpg" alt="image of the nft">
         <img class="icon-view" src="../assets/images/icon-view.svg" alt="eyeball icon">
       </div>
       <a href="#"><h1>{{ heading }}</h1></a>
@@ -35,7 +35,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&display=swap');
-  
+  /* mobile styles */
   * {
     font-family: 'Outfit';
   }
@@ -71,6 +71,7 @@ export default {
     cursor: pointer;
   }
   .nft-image {
+    width: 279px;
     height: auto;
     border-radius: 8px;
     display: block;
@@ -144,7 +145,7 @@ export default {
   .author-name {
     color: #fff;
   }
-
+  /* tablet and desktop styles */
   @media screen and (min-width: 740px) {
     .card {
       width: 350px;
@@ -158,6 +159,5 @@ export default {
     .author-copy {
       font-size: 1rem;
     }
-
   }
 </style>
