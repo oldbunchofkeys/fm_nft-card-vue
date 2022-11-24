@@ -71,7 +71,7 @@ export default {
     cursor: pointer;
   }
   .nft-image {
-    width: 279px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
     display: block;
