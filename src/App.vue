@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <main>
+    <div id="app">
+      <nft-card :heading="heading" :body="body" :author="author" :price="price" :time="time" />
+    </div>
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NftCard from './components/nft-card.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NftCard
+  },
+  data: function() {
+    return {
+      heading: 'Equilibrium #3429',
+      body: 'Our Equilibrium collection promotes balance and calm.',
+      author: 'Jules Wyvern',
+      price: '0.041',
+      time: '3'
+    }
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
